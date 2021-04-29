@@ -56,6 +56,6 @@ Removed `minio/test-bucket-a` successfully.
 
 #### Remove a non-empty bucket
 ```
-sh-4.4# mc rb minio/testbucket-b
+sh-4.4# mc rb minio/testbucket-b --force
 Removed `minio/test-bucket-b` successfully.
 ```
