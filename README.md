@@ -10,7 +10,7 @@
 ```
 # podman run -d -p 9000:9000 --name minio \
   -e MINIO_ROOT_USER=<USERNAME> \
-  -e MINIO_ROOT_PASSWORD=<PASWORD> \
+  -e MINIO_ROOT_PASSWORD=<PASSWORD> \
   -v /payh/to/storage/to/use:Z \
   docker.io/minio/minio:edge \
   server /data
