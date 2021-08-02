@@ -12,7 +12,7 @@
   -e MINIO_ROOT_USER=<USERNAME> \
   -e MINIO_ROOT_PASSWORD=<PASSWORD> \
   -v /payh/to/storage/to/use:Z \
-  docker.io/minio/minio:edge \
+  docker.io/minio/minio \
   server /data
 ```
 
@@ -46,16 +46,19 @@ sh-4.4#
 sh-4.4# mc ls minio
 [2021-04-29 17:10:46 UTC]     0B test-bucket-a/
 [2021-04-29 17:10:51 UTC]     0B test-bucket-b/
+sh-4.4#
 ```
 
 #### Remove an empty bucket
 ```
 sh-4.4# mc rb minio/test-bucket-a
 Removed `minio/test-bucket-a` successfully.
+sh-4.4#
 ```
 
 #### Remove a non-empty bucket
 ```
 sh-4.4# mc rb minio/testbucket-b --force
 Removed `minio/test-bucket-b` successfully.
+sh-4.4#
 ```
